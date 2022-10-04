@@ -1,0 +1,94 @@
+.modal_loading {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* margin-left: 600px;
+    margin-top: 250px; */
+    background: rgba( 255, 255, 255, 0) url('../img/spinner.gif') 50% 50% no-repeat;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+body.loading .modal_loading {
+    display: block;
+}
+
+
+.toasts-top-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1500; /*dari 1040*/
+}
+
+
+/*modal*/
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.5);
+    outline: 0;
+    border-top: 3px solid #dc3545;
+}
+
+
+
+.bootstrap-datetimepicker-widget table td.disabled, .bootstrap-datetimepicker-widget table td.disabled:hover {
+    background: #a9a7a7;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+.bootstrap-datetimepicker-widget table td span.disabled, .bootstrap-datetimepicker-widget table td span.disabled:hover {
+    background: #a9a7a7;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+.bootstrap-datetimepicker-widget table td span.old {
+    color: #6c757d;
+    background: #a9a7a7;
+}
+
+.toast {
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, 0px);
+    z-index: 9999;
+}
+
+/* table thead {
+    background-color: #2F398A;
+    color: white;
+}
+
+#main-card {
+    border-top: 5px solid #ec1e24;
+}
+
+.card-title {
+    color: black !important;
+}
+
+.card-header {
+    padding: 0.5rem 1rem;
+}
+
+.navbar {
+    padding: 0.5rem !important;
+} */

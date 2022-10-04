@@ -1,0 +1,211 @@
+/*
+START INDEX 
+essentials 
+app urm 
+class 
+
+START essentials 
+	font shorthand
+font:  italic normal bold 16px/18px helvetica,arial, sans-serif;
+*/
+
+body, html {	
+	background-image: url(../images_hilmi/bg.png);
+	height: 90%;
+}
+
+h1, h2, h3  {
+	/*
+	color:  gray;
+	font-variant: small-caps ;  --normal, small-caps
+	margin-left: 24px;
+
+	font: 1rem 'Fira Sans', sans-serif;
+	margin: .4rem;
+	*/
+	font-family: calibri, arial, sans-serif; 
+	font-weight: 560;  /* lighter, normal, 100-900, bold, bolder */
+	letter-spacing: normal ;
+	word-spacing: 2px;
+}
+
+h4, h5, h6 {
+	font-family: calibri, arial, sans-serif; 
+	font-weight: 512; 
+	letter-spacing: normal ;
+	word-spacing: 2px; 
+}
+
+a {
+	text-decoration: none;
+}
+
+.label {
+	color:  #2F4F4F;	
+}
+
+p, .content_bodycopy {
+	/*
+	font-size:  24px; --pc % em 
+	line-height:  1.6em; 	
+	text-align:  center;
+
+	text-decoration:  none/underline/line-through;
+	text-transform:  none/lowercase/uppercase/capitalize;
+	*/
+	font-family: cambria, garamond, serif;
+	font-weight: normal;
+	line-height: 24px;
+}
+
+/* START CLASS */
+.content_title {
+	font-family: calibri, arial, sans-serif; 
+}
+
+.p_italic {
+	color:  dimgray;
+	font-style:  italic;
+}
+
+.content_indent {
+	text-indent:  8px;
+}
+
+.content_center {
+	text-align:  center;
+}
+
+.content_bigger {
+	font-size: 24px;
+}
+
+.content_big {
+	font-size: 18px;
+}
+
+.content_bolder {
+	font-weight: 640;	
+}
+
+.content_bold {
+	font-weight: 560;	
+}
+
+
+.title_inline h3,
+.title_inline h4 {
+	display: inline;
+}
+
+/* footer */
+table.footer_table {
+    border:0px solid mediumaquamarine;
+}
+
+table.footer_table > thead > tr > th{
+    border:0px solid mediumaquamarine;
+}
+
+table.footer_table > tbody > tr > td {
+    border:0px solid mediumaquamarine;
+}
+
+.content {
+    height: 70%;
+	min-height: 600px;
+    max-height: 600px;
+    /*
+    */
+    width:  96%;
+    
+    /*
+    min-width: 960px;
+    max-width: 1280px;
+
+    margin: 0 auto;
+	position:relative;
+    z-index: 1;    
+    */
+}
+
+.content_short {
+    height: 8%;
+	min-height: 160px;
+    max-height: 160px;    
+    width: 96%;
+}
+
+
+.footer {
+
+    /*height: 8%;*/
+	min-height: 36px;
+    max-height: 48px;
+    
+    width:  80%;
+    min-width: 960px;
+    max-width: 1280px;
+    /*
+    margin: 0 auto;
+	position:relative;
+    z-index: 1;    
+    */
+}
+
+
+/* 
+--START APP urm 
+.table_height {
+    height: 100vh;
+}
+
+.table_height {
+  height: 100%;
+}
+
+table.table-bordered {
+    border:2px solid ;
+    margin-top:8px;
+}
+
+table.table-bordered > thead > tr > th  {
+    border:2px solid;
+}
+
+table.table-bordered > tbody > tr > td {
+    border:2px solid;
+}
+
+table.table-bordered > tr > td {
+    border:2px solid;
+}
+
+table.table-bordered > tr > td {
+    border-color: gray;
+
+}
+
+.td_valign {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+
+
+.hitungan {
+	font-size: 32px;
+	font-weight:560; 
+}
+
+.fleck {
+	font-size: 24px;
+	font-weight:720;	
+	vertical-align: middle; 
+}
+
+.bg {
+	background-color:white;
+}
+*/
