@@ -21,19 +21,20 @@ class Dashboard_ird extends MX_Controller {
 
 	public function index()
 	{
-		// $data['title']='Kelola Nuklir';
-		// $data['subtitle']='dashboard';
-		// $data['header']='header/header';
-		// $data['navbar']='navbar/navbar';
+		$data['title']='Dashboard Pasien IRD';
+		$data['subtitle']='Instalasi Rawat Darurat';
+		$data['header']='header/header';
+		$data['navbar_ird']='navbar/navbar_ird';
 		// $data['sidebar']='sidebar/sidebar';
-		// $data['footer']='footer/footer';
-		// $data['body']='v_dashboard';
+		$data['footer_ird']='footer/footer';
+		$data['body']='v_dashboard_ird';
 
 		// $data['list_data'] = $this->M_dashboard->get_data_dashboard();
 		// $this->load->view('template',$data);
         $data['pasien_ird'] = $this->M_dashboard_ird->get_data();
-        var_dump($data);
-        exit;
+		$this->load->view('template_ird',$data);
+        // var_dump($data);
+        // exit;
 	}
 
 	public function get_value()
