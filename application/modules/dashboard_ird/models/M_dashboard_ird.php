@@ -10,7 +10,7 @@ class M_dashboard_ird extends CI_Model{
 
     function get_data(){
         $query=
-        "select no_ird,namard,sexrd,xtglkunjrd from drd_pasien_ird where tglkunjrd like '%-22'
+        "select no_ird,namard,tglkunjrd,sexrd,xtglkunjrd from drd_pasien_ird where tglkunjrd like '%JUN-22'
         ";
         return $this->db->query($query)->result();
     }
