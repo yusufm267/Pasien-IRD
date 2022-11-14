@@ -21,7 +21,10 @@ class Dashboard_ird extends MX_Controller {
 
 	public function index()
 	{
-		$data['title']='Dashboard Pasien IRD';
+		$day = $this->input->get('day') ?: date('d');
+		$month = $this->input->get('month') ?: date('m');
+		$year = $this->input->get('year') ?: date('Y');
+		$data['title']='Reporting Pasien IRD';
 		$data['subtitle']='Instalasi Rawat Darurat';
 		$data['header']='header/header';
 		$data['navbar_ird']='navbar/navbar_ird';
@@ -31,15 +34,36 @@ class Dashboard_ird extends MX_Controller {
 
 		// $data['list_data'] = $this->M_dashboard->get_data_dashboard();
 		// $this->load->view('template',$data);
-        $data['pasien_ird'] = $this->M_dashboard_ird->get_data();
+		
+		$data['tahun_tanggal_kunjungan'] = $this->M_dashboard_ird->get_tahun();
+		$data['bulan_tanggal_kunjungan'] = $this->M_dashboard_ird->get_bulan();
+		$data['day'] = $day;
+		$data['month'] = $month;
+		$data['year'] = $year;
+        $data['pasien_ird'] = $this->M_dashboard_ird->get_data($month, $year);
+		$data['status_durasi'] = $this->M_dashboard_ird->get_count_durasi($month,$year);
 		$this->load->view('template_ird',$data);
         // var_dump($data);
         // exit;
 	}
 
-	public function get_value()
-	{
-		
+	public function get_tahun(){
+		$data['tahun_tanggal_kunjungan'] = $this->M_dashboard_ird->get_tahun();
+	}
+
+	public function get_status_durasi(){
+		$day = $this->input->get('day') ?: date('d');
+		$month = $this->input->get('month') ?: date('m');
+		$year = $this->input->get('year') ?: date('Y');
+
+		// $data['day'] = $day;
+		// $data['month'] = $month;
+		// $data['year'] = $year;
+
+		$data['status_durasi'] = $this->M_dashboard_ird->get_count_durasi($month,$year);
+		// $this->load->view($data);
+		// var_dump($data);
+		// exit;
 	}
 
 }

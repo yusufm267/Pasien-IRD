@@ -95,12 +95,67 @@ $query_builder = TRUE;
 // 	'save_queries' => TRUE
 // );
 
-//ORA STAGING
-$DBHOST     = 'orastaging.rshs.system';
+// ORA STAGING
+// $DBHOST     = 'orastaging.rshs.system';
+// $DBPORT     = '1521';
+// $DBSID   = 'ORCL';
+// $DBUSERNAME = 'pegawai';
+// $DBPASS      = 'chocolate';
+
+// $db['default']['hostname'] = '(DESCRIPTION=
+//   (ADDRESS=
+// 	(PROTOCOL=TCP)
+// 	(HOST='.$DBHOST.')
+// 	(PORT='.$DBPORT.')
+//   )
+//   (CONNECT_DATA=
+//    (SERVER=DEDICATED)
+// 	(	SID='.$DBSID.')
+//   )
+// )';
+
+// $db['default']['username'] = $DBUSERNAME;
+// $db['default']['password'] = $DBPASS;
+// $db['default']['database'] = '';
+// $db['default']['dbdriver'] = 'oci8';
+// $db['default']['dbprefix'] = '';
+// $db['default']['pconnect'] = FALSE;
+// $db['default']['db_debug'] = (ENVIRONMENT !== 'production');
+// $db['default']['cache_on'] = FALSE;
+// $db['default']['cachedir'] = '';
+// $db['default']['char_set'] = 'utf8';
+// $db['default']['dbcollat'] = 'utf8_general_ci';
+// $db['default']['swap_pre'] = '';
+// $db['default']['autoinit'] = TRUE;
+// $db['default']['stricton'] = FALSE;
+
+// RSHS LIVE CARA 1
+// $active_group = "default";
+// $active_record = TRUE;
+// $tnsname = '(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.5.181)(PORT = 1521))';
+// $tnsname .= '(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = ORCL)))';
+// $db['default']['hostname'] = $tnsname;
+// $db['default']['username'] = 'ADMSIRS';
+// $db['default']['password'] = 'safety';
+// $db['default']['database'] = 'ADMSIRS';
+// $db['default']['dbdriver'] = 'oci8';
+// $db['default']['dbprefix'] = '';
+// $db['default']['pconnect'] = FALSE;
+// $db['default']['db_debug'] = TRUE;
+// $db['default']['cache_on'] = FALSE;
+// $db['default']['cachedir'] = '';
+// $db['default']['char_set'] = 'utf8';
+// $db['default']['dbcollat'] = 'utf8_general_ci';
+// $db['default']['swap_pre'] = '';
+// $db['default']['autoinit'] = TRUE;
+// $db['default']['stricton'] = FALSE;
+
+// RSHS LIVE CARA 2
+$DBHOST     = '192.168.5.181';
 $DBPORT     = '1521';
-$DBSID   = 'ORCL';
-$DBUSERNAME = 'pegawai';
-$DBPASS      = 'chocolate';
+$DBSERVICENAME   = 'orcl';
+$DBUSERNAME = 'admsirs';
+$DBPASS      = 'safety';
 
 $db['default']['hostname'] = '(DESCRIPTION=
   (ADDRESS=
@@ -110,7 +165,7 @@ $db['default']['hostname'] = '(DESCRIPTION=
   )
   (CONNECT_DATA=
    (SERVER=DEDICATED)
-	(	SID='.$DBSID.')
+	(	SERVICE_NAME='.$DBSERVICENAME.')
   )
 )';
 

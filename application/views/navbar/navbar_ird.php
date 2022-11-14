@@ -1,9 +1,9 @@
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+  <nav class="main-header navbar sticky-top navbar-expand-md navbar-light navbar-white">
     <div class="container">
       <a href="#" class="navbar-brand">
         <img src="<?=base_url()?>assets/img/logo-site2.png ?>" alt="AdminLTE Logo" class="brand-image img-circle" style="opacity: .8">
-        <span class="brand-text font-weight-strong">Dashboard Pasien IRD</span>
+        <span class="brand-text font-weight-strong">Reporting Pasien IRD</span>
       </a>
 
       <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,9 +23,9 @@
       </div>
 
       <!-- Right navbar links -->
-      <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+      <!-- <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto"> -->
         <!-- Notifications Dropdown Menu -->
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="#">
             <i class="far fa-bell"></i>
             <span class="badge badge-warning navbar-badge">15</span>
@@ -51,7 +51,7 @@
             <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
           </div>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </nav>
   <!-- /.navbar -->

@@ -1,6 +1,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard IRD</title>
+  <title>Reporting IRD</title>
 
   <!-- Shorcut Icon -->
   <link rel="shortcut icon" href="<?=base_url()?>assets/icon/favicon.ico" type="image/x-icon">
